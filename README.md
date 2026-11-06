@@ -1,11 +1,11 @@
-# 🚀 Review Radar – AI-Powered App Review Intelligence & Complaint Analysis
+🚀 Review Radar – AI-Powered App Review Intelligence & Complaint Analysis
 
 Transform thousands of customer reviews into actionable business insights.
 
 Review Radar is a Python-based data science application that analyzes Google Play Store reviews to identify customer complaints, understand user sentiment, discover recurring problems, and generate meaningful business insights through an interactive Streamlit dashboard.
 
 Developer: Samarth Shukla
-Project Domain: Data Science | NLP | Sentiment Analysis | Business Intelligence
+Domain: Data Science | NLP | Sentiment Analysis | Business Intelligence
 Application: Python CLI + Interactive Streamlit Dashboard
 
 ---
@@ -78,7 +78,7 @@ The main goal is to help businesses understand not only what customers think, bu
 🛠️ Technology Stack
 
 Technology| Purpose
-Python| Core programming
+Python| Core programming language
 Pandas| Data processing
 NumPy| Numerical operations
 NLP| Text analysis
@@ -142,14 +142,13 @@ Prerequisites
 Step 1: Clone the Repository
 
 git clone https://github.com/Samarth7272/Algonive_review-radar.git
-
 cd Algonive_review-radar
 
 Step 2: Create a Virtual Environment
 
 python -m venv .venv
 
-Step 3: Activate Environment
+Step 3: Activate the Environment
 
 Windows:
 
@@ -173,13 +172,25 @@ Open the local URL displayed in your terminal.
 
 📊 Business Applications
 
-Review Radar can help:
+Product Managers
 
-- Product Managers: Understand customer dissatisfaction and product improvement opportunities.
-- Business Analysts: Discover recurring customer complaints.
-- App Developers: Identify bugs and usability issues through customer feedback.
-- Marketing Teams: Understand customer perception and satisfaction.
-- Business Owners: Make data-driven product decisions.
+Understand customer dissatisfaction and identify product improvement opportunities.
+
+Business Analysts
+
+Discover recurring customer complaints and analyze customer feedback patterns.
+
+App Developers
+
+Identify bugs and usability issues through customer reviews.
+
+Marketing Teams
+
+Understand customer perception and satisfaction.
+
+Business Owners
+
+Make informed, data-driven product decisions.
 
 ---
 
@@ -217,10 +228,23 @@ Final-year B.Tech Computer Science Engineering student interested in Python Deve
 
 I enjoy building practical applications that solve real-world problems using software engineering and data-driven technologies.
 
-GitHub: https://github.com/Samarth7272
+GitHub: "Samarth7272" (https://github.com/Samarth7272)
 
 ---
 
-⭐ If you find this project interesting, consider giving it a star!
+🤝 Open to Opportunities
 
-Open to Software Developer, Python Developer, Backend Developer, and Data Science opportunities.
+I am actively looking for opportunities in:
+
+- Python Developer
+- Backend Developer
+- Software Engineer
+- Data Analyst
+- Junior Data Scientist
+- Machine Learning Intern
+
+Interested in building scalable applications, solving real-world problems, and contributing to innovative engineering teams.
+
+---
+
+⭐ If you find this project interesting, please consider giving it a star!
