@@ -1,26 +1,26 @@
-📡 Review Radar | AI-Powered App Review Intelligence & Complaint Analysis
+🚀 Review Radar – AI-Powered App Review Intelligence & Complaint Analysis
 
-Turn thousands of customer reviews into actionable business insights.
+Transform thousands of customer reviews into actionable business insights.
 
 Review Radar is a Python-based data science application that analyzes Google Play Store reviews to identify customer complaints, understand user sentiment, discover recurring problems, and generate meaningful business insights through an interactive Streamlit dashboard.
 
 Developer: Samarth Shukla
-
 Project Domain: Data Science | NLP | Sentiment Analysis | Business Intelligence
-
 Application: Python CLI + Interactive Streamlit Dashboard
 
 ---
 
-🚀 Project Overview
+📌 Project Overview
 
-Businesses receive thousands of customer reviews every day. Reading and analyzing each review manually is time-consuming and makes it difficult to identify recurring customer problems.
+Businesses receive thousands of customer reviews every day. Manually reading and analyzing each review is time-consuming and makes it difficult to identify recurring customer problems.
 
-Review Radar addresses this challenge by transforming unstructured app reviews into structured, actionable insights.
+Review Radar solves this challenge by transforming unstructured app reviews into structured, actionable insights.
 
 The application collects reviews, cleans textual data, performs sentiment analysis, identifies common complaint themes, studies rating-related language, and visualizes trends through an interactive dashboard.
 
-The goal: Help businesses understand not just what customers think, but also why they are dissatisfied.
+The main goal is to help businesses understand not only what customers think, but also why they are dissatisfied.
+
+---
 
 🎯 Key Objectives
 
@@ -31,6 +31,8 @@ The goal: Help businesses understand not just what customers think, but also why
 - Identify recurring problems using bigram analysis.
 - Understand review trends around app updates.
 - Generate visual reports for business decision-making.
+
+---
 
 ✨ Key Features
 
@@ -57,136 +59,97 @@ The goal: Help businesses understand not just what customers think, but also why
 
 4. Complaint Intelligence
 
-- Identify recurring complaint themes.
-- Discover frequently mentioned problems.
-- Extract actionable customer pain points.
-- Analyze negative customer feedback.
+- Identify recurring customer complaints.
+- Extract frequently occurring keywords.
+- Analyze complaint-related bigrams.
+- Discover patterns in negative reviews.
 
-5. Advanced Text Analytics
+5. Business Intelligence Dashboard
 
-- Bigram analysis.
-- Rating-correlated word analysis.
-- TF-IDF-based text analysis.
-- Comparison of language in 1-star and 5-star reviews.
-
-6. Trend Analysis
-
-- Review trend visualization.
-- App version-based trend analysis.
-- Update-impact analysis.
-
-7. Interactive Dashboard
-
-- Five-tab Streamlit dashboard.
+- Interactive Streamlit dashboard.
 - Sentiment distribution charts.
-- Complaint analysis visualizations.
-- Word clouds of customer pain points.
-- Management summary.
+- Rating-based analysis.
+- Review trend visualization.
+- Word clouds and complaint insights.
+- Management summary reports.
+
+---
 
 🛠️ Technology Stack
 
 Technology| Purpose
-Python| Core development
-Streamlit| Interactive dashboard
+Python| Core programming
 Pandas| Data processing
 NumPy| Numerical operations
-TextBlob| Text and sentiment processing, where implemented
-NLTK| Natural Language Processing
-Scikit-learn| TF-IDF and text analysis
+NLP| Text analysis
+Scikit-learn| Text analytics
+Streamlit| Interactive dashboard
 Matplotlib| Data visualization
 Seaborn| Statistical visualization
 Google Play Scraper| Review collection
-Pytest| Automated testing
+
+---
 
 🏗️ System Architecture
 
-       GOOGLE PLAY STORE / CSV
-                  |
-                  v
-           REVIEW COLLECTION
-                  |
-                  v
-          TEXT PREPROCESSING
-                  |
-                  v
-          SENTIMENT ANALYSIS
-                  |
-                  v
-        COMPLAINT IDENTIFICATION
-                  |
-          +-------+-------+
-          |       |       |
-          v       v       v
-       BIGRAM  TF-IDF   TREND
-       ANALYSIS ANALYSIS ANALYSIS
-          |       |       |
-          +-------+-------+
-                  |
-                  v
-          DATA VISUALIZATION
-                  |
-                  v
-          STREAMLIT DASHBOARD
-                  |
-                  v
-         MANAGEMENT SUMMARY
+Data Collection → Text Preprocessing → Sentiment Analysis → Complaint Detection → Data Visualization → Business Insights
+
+The application follows a modular architecture, separating review collection, preprocessing, sentiment analysis, analytics, and dashboard visualization.
+
+---
 
 📂 Project Structure
 
 review-radar/
 │
-├── app.py                    # Streamlit dashboard
-├── main.py                   # CLI analysis pipeline
-├── config.py                 # Configuration settings
+├── app.py
+├── main.py
+├── config.py
+├── requirements.txt
 │
 ├── src/
-│   ├── scraper.py             # Google Play review collection
-│   ├── preprocess.py          # Text preprocessing
-│   ├── sentiment.py           # Sentiment analysis
-│   ├── ngrams.py              # Bigram analysis
-│   ├── correlation.py         # Rating-word correlation
-│   ├── insights.py            # Complaint identification
-│   ├── visualize.py           # Charts and visualizations
-│   ├── pipeline.py            # Complete analysis pipeline
-│   └── sample_data.py         # Demo review data
+│   ├── scraper.py
+│   ├── preprocess.py
+│   ├── sentiment.py
+│   ├── ngrams.py
+│   ├── correlation.py
+│   ├── insights.py
+│   ├── visualize.py
+│   ├── pipeline.py
+│   └── sample_data.py
 │
 ├── data/
-│   ├── raw/                   # Original review data
-│   └── processed/             # Processed review data
+│   ├── raw/
+│   └── processed/
 │
 ├── reports/
-│   └── figures/               # Generated visualizations
+│   └── figures/
 │
 ├── notebooks/
-│   └── exploration.ipynb      # Data exploration
 │
-├── tests/                     # Automated tests
-├── assets/                    # Project assets
-├── .streamlit/                # Dashboard configuration
-├── requirements.txt
-└── README.md
+└── tests/
+
+---
 
 ⚙️ Installation & Setup
 
 Prerequisites
 
-- Python 3.9 or higher.
-- pip package manager.
-- Git.
+- Python 3.10 or above
+- pip package manager
+- Git
 
-Step 1: Clone the repository
+Step 1: Clone the Repository
 
 git clone https://github.com/Samarth7272/Algonive_review-radar.git
 
-Step 2: Open the project directory
-
 cd Algonive_review-radar
 
-Step 3: Create a virtual environment
+Step 2: Create a Virtual Environment
 
 python -m venv .venv
 
-Step 4: Activate the environment
+Step 3: Activate Environment
 
 Windows:
 
@@ -196,125 +159,68 @@ Linux / macOS:
 
 source .venv/bin/activate
 
-Step 5: Install dependencies
+Step 4: Install Dependencies
 
 pip install -r requirements.txt
 
-Step 6: Download NLP resources
-
-python -m textblob.download_corpora
-
-Step 7: Run the demo pipeline
-
-python main.py --demo
-
-Step 8: Launch the dashboard
+Step 5: Run the Application
 
 streamlit run app.py
 
 Open the local URL displayed in your terminal.
 
-📊 Analyze Real App Reviews
+---
 
-Review Radar supports Google Play Store review collection and CSV-based analysis.
-
-Example: Collect Spotify reviews
-
-python main.py --scrape --app-id com.spotify.music --count 3000
-
-Example: Analyze your own CSV file
-
-python main.py --input data/raw/your_file.csv
-
-Configure the application using "config.py", including:
-
-- "APP_ID"
-- "REVIEW_COUNT"
-- "UPDATE_DATES" (optional)
-
-Use responsible collection practices and respect the relevant platform terms and limits.
-
-📈 Business Applications
+📊 Business Applications
 
 Review Radar can help:
 
-- Product managers identify product issues.
-- Businesses understand customer dissatisfaction.
-- Customer support teams identify recurring complaints.
-- App developers prioritize improvements.
-- Marketing teams understand customer opinions.
-- Management teams make data-informed decisions.
+- Product Managers: Understand customer dissatisfaction and product improvement opportunities.
+- Business Analysts: Discover recurring customer complaints.
+- App Developers: Identify bugs and usability issues through customer feedback.
+- Marketing Teams: Understand customer perception and satisfaction.
+- Business Owners: Make data-driven product decisions.
 
-🧪 Testing
-
-Run the automated tests:
-
-pytest tests
-
-The test suite helps verify individual components and maintain application reliability.
-
-📸 Screenshots & Reports
-
-The repository includes:
-
-- Dashboard screenshots.
-- Generated analytical charts.
-- Sentiment visualizations.
-- Complaint analysis reports.
-- Management summary.
-
-Explore the "assets/" and "reports/figures/" directories for available project visuals.
-
-💡 Skills Demonstrated
-
-This project demonstrates practical experience in:
-
-- Python programming.
-- Natural Language Processing.
-- Sentiment analysis.
-- Data collection and preprocessing.
-- Exploratory Data Analysis.
-- TF-IDF and n-gram analysis.
-- Data visualization.
-- Streamlit application development.
-- Modular software architecture.
-- Automated testing.
-- Git and GitHub.
+---
 
 🔮 Future Enhancements
 
+- AI-powered complaint classification.
 - Advanced transformer-based sentiment analysis.
-- Multilingual review analysis.
-- Aspect-based sentiment analysis.
-- Automated complaint categorization.
-- Real-time review monitoring.
-- Interactive business intelligence reports.
+- Multi-platform review analysis.
+- Automated review monitoring.
 - Cloud deployment.
-- Advanced predictive analytics.
+- Exportable PDF business intelligence reports.
+- Real-time analytics and notifications.
+
+---
+
+💼 Skills Demonstrated
+
+- Python Programming
+- Natural Language Processing (NLP)
+- Exploratory Data Analysis (EDA)
+- Sentiment Analysis
+- Data Cleaning and Preprocessing
+- Data Visualization
+- Streamlit Application Development
+- Modular Software Architecture
+- Problem Solving and Analytical Thinking
+
+---
 
 👨‍💻 About the Developer
 
 Samarth Shukla
 
-Final-Year B.Tech Computer Science and Engineering Student.
+Final-year B.Tech Computer Science Engineering student interested in Python Development, Backend Engineering, Data Science, and Artificial Intelligence.
 
-Interested in building practical applications using Python, Artificial Intelligence, Natural Language Processing, Machine Learning, and Backend Development.
+I enjoy building practical applications that solve real-world problems using software engineering and data-driven technologies.
 
 GitHub: https://github.com/Samarth7272
 
-Technical Interests:
-
-- Python Development
-- Data Science
-- Machine Learning
-- Natural Language Processing
-- Backend Engineering
-- Full Stack Development
-
 ---
 
-⭐ Support
+⭐ If you find this project interesting, consider giving it a star!
 
-If you find Review Radar useful or interesting, consider giving this repository a star.
-
-Building practical projects, solving real-world problems, and continuously learning new technologies.
+Open to Software Developer, Python Developer, Backend Developer, and Data Science opportunities.
